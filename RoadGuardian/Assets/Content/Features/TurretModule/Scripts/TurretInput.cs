@@ -36,9 +36,10 @@ namespace Content.Features.TurretModule.Scripts
 
         public void Tick()
         {
-            if (!_isInteracting) return;
+            if (!_isInteracting || Touchscreen.current == null || !Touchscreen.current.primaryTouch.press.isPressed)
+                return;
 
-            Vector2 currentPosition = Mouse.current.position.ReadValue();
+            Vector2 currentPosition = Touchscreen.current.primaryTouch.position.ReadValue();
             Vector2 delta = currentPosition - _lastInputPosition;
             _lastInputPosition = currentPosition;
 

@@ -114,6 +114,17 @@ namespace Core.InputModule.Generated
                     ""action"": ""Interaction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6edbae29-f2dd-4852-ba99-5596203af565"",
+                    ""path"": ""<Touchscreen>/touch*/Press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
